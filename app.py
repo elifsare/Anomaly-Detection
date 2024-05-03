@@ -1,4 +1,3 @@
-# app.py
 from flask import Flask, request, render_template, jsonify
 import pandas as pd
 import joblib
@@ -6,7 +5,6 @@ import random
 
 app = Flask(__name__)
 
-# Yüklü modeli ve scaleri yükleyin
 model = joblib.load('anomaly_detection_model_RFC.joblib')
 scaler = joblib.load('scaler.joblib')
 
