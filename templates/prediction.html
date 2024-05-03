@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictions</title>
+    <style>
+        /* CSS still can be added for better styling */
+    </style>
+</head>
+<body>
+    <h1>Predictions</h1>
+    <ul>
+        {% for prediction in predictions %}
+        <li>
+            <h2>Data Point: {{ prediction['Data Point'] }}</h2>
+            <p>Predicted Outcome: {{ prediction['Predicted Outcome'] }}</p>
+            <h3>Details:</h3>
+            <ul>
+                {% for key, value in prediction['Details'].items() %}
+                <li>{{ key }}: {{ value }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
