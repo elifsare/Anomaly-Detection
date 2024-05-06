@@ -26,7 +26,7 @@ requirements.txt: Python dependencies required for running the Flask application
 ## Usage
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/nsl-kdd-analysis.git
+git clone https://github.com/elifsare/Anomaly-Detection.git
 cd nsl-kdd-analysis
 ```
 
